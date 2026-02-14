@@ -33,7 +33,7 @@ export const DecryptedText = ({
   const containerRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
-    let interval: any;
+    let interval: NodeJS.Timeout | undefined;
     let iteration = 0;
 
     const startAnimation = () => {
